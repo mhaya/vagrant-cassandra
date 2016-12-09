@@ -1,0 +1,7 @@
+.vagrant
+.bundle
+vendor
+*~
+*.bak
+
+
