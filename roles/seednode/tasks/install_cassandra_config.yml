@@ -1,0 +1,7 @@
+- name: setting seed node
+  replace:
+    dest: /etc/cassandra/conf/cassandra.yaml
+    regexp: '^auto_bootstrap: true'
+    replace: 'auto_bootstrap: false'
+    backup: no
+  notify: restart cassandra

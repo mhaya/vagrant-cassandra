@@ -1,0 +1,6 @@
+firewalld:
+   accept_services:
+     - ssh
+
+
+

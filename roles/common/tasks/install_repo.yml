@@ -1,0 +1,11 @@
+- name: install datasax.repo
+  template:
+    src: files/datasax.repo
+    dest: /etc/yum.repos.d/datasax.repo
+
+- name: install epel
+  yum: name={{item}}
+  with_items:
+     - https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+
+

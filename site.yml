@@ -1,0 +1,27 @@
+- name: apply common configuration to all nodes
+  hosts: all
+  remote_user: root
+
+- name: node1の設定
+  hosts: node1 
+  become: yes
+  user: vagrant
+  roles:
+    - common
+    - seednode 
+
+- name: node2の設定
+  hosts: node2
+  become: yes
+  user: vagrant
+  roles:
+    - common
+    - node
+
+- name: node3の設定
+  hosts: node3
+  become: yes
+  user: vagrant
+  roles:
+    - common
+    - node

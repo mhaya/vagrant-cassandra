@@ -1,0 +1,6 @@
+- name: configure cassandra
+  template:
+    src:  templates/cassandra.yaml  
+    dest: /etc/cassandra/conf/cassandra.yaml
+  notify: restart cassandra
+
