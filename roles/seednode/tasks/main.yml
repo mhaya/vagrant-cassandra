@@ -1,2 +1,3 @@
 ---
-- include: install_cassandra_config.yml
+  - include: install_cassandra_config.yml
+  - include: install_opscenter.yml

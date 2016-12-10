@@ -3,8 +3,10 @@ firewalld_accept_services:
 
 firewalld_accept_ports:
      - 9160/tcp
-     - 9042/tcp
      - 7000/tcp
      - 7001/tcp
      - 7199/tcp
+     - 8012/tcp
+     - 9042/tcp
+     - 61621/tcp
 

@@ -1,0 +1,2 @@
+- name: restart opscenterd 
+  service: name=opscenterd state=restarted

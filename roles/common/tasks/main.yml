@@ -1,11 +1,11 @@
 ---
-- include: install_base.yml
-- include: install_firewalld.yml
-- include: install_hosts.yml
-- include: install_repo.yml
-- include: install_jdk.yml
-- include: install_jna.yml
-- include: install_cassandra.yml
-- include: install_pip.yml
-- include: install_cassandra_driver.yml
-- include: install_cassandra_config.yml
+  - include: install_base.yml
+  - include: install_firewalld.yml
+  - include: install_hosts.yml
+  - include: install_repo.yml
+  - include: install_jdk.yml
+  - include: install_jna.yml
+  - include: install_cassandra.yml
+  - include: install_pip.yml
+  - include: install_cassandra_driver.yml
+  - include: install_cassandra_config.yml

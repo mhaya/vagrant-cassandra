@@ -1,0 +1,7 @@
+- name: install cassandra 
+  yum: name={{ item }} state=present
+  with_items:
+    - opscenter 
+
+- name: start opscenterd 
+  service: name=opscenterd state=started enabled=yes

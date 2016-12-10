@@ -1,4 +1,5 @@
 ---
  - include: handler_firewalld.yml
  - include: handler_cassandra.yml
+ - include: handler_opscentered.yml
 
