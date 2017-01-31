@@ -11,7 +11,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.define :node1 do | node1 |
     node1.vm.hostname = "node1"
-    node1.vm.network :private_network, ip: "192.168.12.20"
+    node1.vm.network :private_network, ip: "192.168.12.10"
     node1.vm.network :forwarded_port, id: "ssh", guest: 22, host: 2212
   end
 
