@@ -13,7 +13,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     node1.vm.hostname = "node1"
     node1.vm.network :private_network, ip: "192.168.12.10"
     node1.vm.network :forwarded_port, id: "ssh", guest: 22, host: 2212
+    node1.vm.provider "virtualbox" do |vb|
+      vb.cpus = 2
+    end
   end
+
 
   config.vm.define :node2 do | node2 |
      node2.vm.hostname = "node2"
